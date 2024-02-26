@@ -19,26 +19,12 @@
         @include('partials.header')
 
         <main>
-            <div class="container">
+            <h1>Elenco Film</h1>
 
-                <div class="row">
-
-                    <div class="col">
-
-                        <div>
-                            <img class="gatto-img" src="{{ Vite::asset('resources/img/gatto.webp') }}" alt="Gatto">
-                        </div>
-
-                        <div class="gatto-bg">
-                            QUESTO DIV AVRA' COME SFONDO IL GATTO
-                        </div>
-
-                        @yield('main-content')
-
-                    </div>
-
-                </div>
-
+            <div class="film-container">
+                @foreach ($movies as $item)
+                    
+                @endforeach
             </div>
         </main>
 
