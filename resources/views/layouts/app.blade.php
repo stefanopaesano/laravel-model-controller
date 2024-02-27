@@ -18,15 +18,7 @@
 
         @include('partials.header')
 
-        <main>
-            <h1>Elenco Film</h1>
-
-            <div class="film-container">
-                @foreach ($movies as $item)
-                    
-                @endforeach
-            </div>
-        </main>
+        @yield('main-content')
 
         @include('partials.footer')
 
