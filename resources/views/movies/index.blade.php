@@ -10,13 +10,13 @@
 <h2>
   <div class="row">
       @foreach ($movies as $index => $movie)
-          <div class="container">
+          <div class="container bg-success">
               <div class="card">
 
                   <div class="card-body">
 
                       <ul>
-                        
+
                         <li>
                           {{ $movie->title }}
                         </li>  
