@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('page-title', 'Movies')
+@section('page-title', 'home')
 
 @section('main-content')
 <h1>
@@ -15,9 +15,32 @@
 
                   <div class="card-body">
 
-                      <h3>
+                      <ul>
+                        
+                        <li>
                           {{ $movie->title }}
-                      </h3>
+                        </li>  
+  
+                        <li>
+                          {{ $movie->original_title }}
+                        </li>
+                          
+  
+                        <li>
+                          {{ $movie->date }}
+                        </li>
+                          
+                        <li>
+                          {{ $movie->nationality }}
+                        </li>
+
+                      </ul>
+                      
+                        
+
+                     
+                        
+                      
 
                       <a href="{{ route('movies.show', ['id' => $movie->id]) }}" class="btn btn-primary">
                         Vai al film
